@@ -92,15 +92,17 @@
   <article id="zh" lang="zh-Hant">
     <h1>密碼保 隱私權聲明</h1>
     <p class="meta">適用 App：密碼保（PasswordSafe，Android）<br>
-      開發者：chlapps</p>
+      開發者：chlapps<br>
+      本版適用：1.1 版起（最後更新：2026 年 11 月）</p>
 
     <section class="summary">
       <h2>重點摘要</h2>
       <ul>
-        <li>密碼保<strong>不會收集、上傳或分享</strong>您的任何個人資料。</li>
-        <li>您輸入的所有內容<strong>只儲存在您的手機中</strong>，並且經過加密。</li>
-        <li>本 App <strong>沒有網路連線功能</strong>，沒有廣告、沒有數據分析工具，也沒有帳號系統。</li>
-        <li>開發者<strong>無法看到、取得或幫您復原</strong>您的資料。</li>
+        <li>密碼保<strong>不會把您的記錄傳給開發者或任何第三方</strong>。除了您自己建立的加密備份，您輸入的內容只儲存在您的手機中，並且經過加密。</li>
+        <li>本 App 沒有廣告、沒有數據分析工具，也沒有帳號系統。</li>
+        <li>只有 <strong>Google Play 購買相關功能</strong>（顯示 Pro 價格、購買、確認是否已購買）會透過 Google Play 連線。沒有使用 Pro 或備份功能時，App 不會連線。</li>
+        <li>選用的 <strong>Pro 加密備份</strong>會先在手機上加密，再存到<strong>您自己選擇的位置</strong>（例如您的 Google 雲端硬碟或手機儲存空間）。開發者收不到您的備份檔。</li>
+        <li>開發者<strong>無法看到、取得或幫您復原</strong>您的資料，也不知道您的復原密碼。</li>
       </ul>
     </section>
 
@@ -110,68 +112,97 @@
     </section>
 
     <section>
-      <h2>二、我們不收集任何個人資料</h2>
-      <p>本 App 未要求網路存取權限，無法連線到網際網路，因此不會將任何資料傳送給開發者或任何第三方。</p>
+      <h2>二、我們不收集您的記錄</h2>
+      <p>本 App 不會把您的記錄、設定或備份傳送給開發者或任何第三方。</p>
       <p>本 App 不使用廣告、數據分析、當機回報或任何第三方追蹤服務，也不需要註冊或登入帳號。</p>
     </section>
 
     <section>
       <h2>三、儲存在您手機中的資料</h2>
-      <p>為了提供服務，下列資料只會儲存在您的手機中，不會離開您的裝置：</p>
+      <p>為了提供服務，下列資料儲存在您的手機中：</p>
       <ul>
         <li>您自行輸入的記錄：記錄名稱、備註、分類，以及帳號、密碼等欄位內容。</li>
         <li>App 設定：顯示模式、自動上鎖時間、分類設定。</li>
         <li>若您的手機沒有設定螢幕鎖而使用「App 密碼」：只儲存經過雜湊及加密處理的驗證資料，不儲存密碼本身。</li>
         <li>為了排列「常用」記錄，App 會記錄各筆記錄的查看次數與最後查看時間。</li>
+        <li>使用 Pro 備份時：備份名稱、上次備份時間、您選擇的備份檔位置，以及受保護的備份金鑰資料。</li>
       </ul>
-      <p>記錄資料庫以整庫加密方式保存，加密金鑰由 Android 系統的 Keystore 保護。</p>
+      <p>記錄資料庫以整庫加密方式保存，加密金鑰由 Android 系統的 Keystore 保護。除了您自己建立的加密備份（見第五節），這些資料不會離開您的裝置。</p>
     </section>
 
     <section>
-      <h2>四、權限與系統功能</h2>
+      <h2>四、Pro 購買（Google Play）</h2>
+      <ul>
+        <li>購買 Pro 由 Google Play 處理。付款資料（例如信用卡）由 Google 收集與保管，開發者看不到。</li>
+        <li>本 App 會向 Google Play 查詢「這個 Google Play 帳號是否已購買 Pro」，只用來開啟 Pro 功能。購買資訊不會傳給開發者。</li>
+        <li>為了提供購買功能，Google Play 帳單程式庫可能會把它自己的運作紀錄傳給 Google，這部分依 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>處理。</li>
+        <li>本 App 因此具有網路存取權限與 Google Play 帳單相關權限。這些連線只用於 Google Play 購買相關功能：顯示 Pro 價格、購買、確認是否已購買，以及上述帳單程式庫本身的運作紀錄（可能稍後才送出）。本 App 沒有其他連線到網際網路的功能。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>五、加密備份（選用的 Pro 功能）</h2>
+      <ul>
+        <li>備份檔由您主動建立。您透過 Android 系統的檔案選擇器自行選擇存放位置；本 App 只取得您所選那個檔案的存取權，<strong>不會讀取您的其他檔案</strong>，也不使用 Google Drive API、不要求 Google 帳號授權。</li>
+        <li>您的記錄在手機上先以您設定的<strong>復原密碼</strong>加密，才寫入備份檔。開發者沒有您的復原密碼，也沒有自己的雲端伺服器。</li>
+        <li>備份檔中有少量<strong>未加密</strong>的資訊，用來辨識備份與處理不同版本：備份名稱、備份時間、App 版本、Android 版本與手機型號，以及隨機產生的識別碼與加密參數。您的記錄內容不在其中。</li>
+        <li>如果您把備份存到 Google 雲端硬碟等服務，傳送與保管由該服務處理，並適用該服務的隱私權政策。</li>
+        <li>更新備份時，本 App 通常會在新備份確認成功後，移除它自己記錄的上一份備份檔。存在 Google 雲端硬碟時，被移除的檔案會先進入雲端硬碟的垃圾桶（通常約 30 天後自動清除），內容仍是加密的。</li>
+        <li>本 App 不會刻意刪除您自己複製的檔案。但如果您把上一份備份檔<strong>搬移</strong>到其他資料夾，它仍可能被視為上一份備份而被移除。</li>
+        <li>在某些情況下（例如儲存位置不允許刪除、或備份中途失敗），舊的備份檔或未完成的檔案可能會留下，您可以在存放位置自行刪除。</li>
+        <li>本 App 會保留對它自己建立的那份備份檔的存取權，直到建立下一份備份或您清除全部資料為止。</li>
+        <li><strong>如果忘記復原密碼，且原本的手機也無法使用，就無法從備份還原</strong>，開發者也無法協助。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>六、權限與系統功能</h2>
       <ul>
         <li><strong>生物辨識（指紋、臉部）與螢幕鎖</strong>：用於解鎖本 App。驗證由 Android 系統完成，本 App 只會收到「驗證成功或失敗」的結果，<strong>不會取得、儲存您的指紋或臉部資料</strong>。</li>
+        <li><strong>網路與 Google Play 帳單</strong>：只用於 Google Play 購買相關功能（見第四節）。</li>
         <li><strong>剪貼簿</strong>：只有在您主動使用「複製」功能時，密碼保才會將該欄位內容寫入系統剪貼簿。</li>
         <li><strong>截圖</strong>：為保護您的資料，本 App 禁止截圖，切換 App 時的預覽畫面也會被遮蔽。</li>
       </ul>
     </section>
 
     <section>
-      <h2>五、資料分享</h2>
+      <h2>七、資料分享</h2>
       <p>本 App 不會提供、交換、出租或出售任何資料給任何個人、團體、企業或政府機關。開發者本身也無法取得您的資料。</p>
     </section>
 
     <section>
-      <h2>六、資料保存與刪除</h2>
+      <h2>八、資料保存與刪除</h2>
       <ul>
         <li>資料會保存在您的手機中，直到您自行刪除。</li>
         <li>您可以隨時在 App 中刪除個別記錄，或在「設定」→「清除全部資料」一次刪除所有資料。</li>
-        <li>移除（解除安裝）本 App 時，Android 系統會一併刪除本 App 的所有資料。</li>
-        <li>本 App 已停用 Android 自動備份與裝置間資料轉移，<strong>沒有雲端備份</strong>。手機遺失、損壞或移除 App 時，資料可能無法復原，開發者也無法協助復原。</li>
+        <li>移除（解除安裝）本 App 時，Android 系統會一併刪除本 App 在手機上的所有資料。</li>
+        <li>本 App 停用 Android 自動備份與裝置間資料轉移。只有您自己建立的 Pro 加密備份會存到手機以外的位置。</li>
+        <li>「清除全部資料」或解除安裝本 App，<strong>不會刪除您的備份檔</strong>；您可以在存放位置自行刪除。</li>
       </ul>
     </section>
 
     <section>
-      <h2>七、資料安全</h2>
+      <h2>九、資料安全</h2>
       <ul>
         <li>記錄資料庫整庫加密，金鑰由 Android Keystore 保護。</li>
-        <li>每次開啟 App 都需要驗證身分；離開 App 或一段時間沒有操作會自動上鎖。</li>
+        <li>備份內容以您的復原密碼加密後才寫出手機。</li>
+        <li>開啟 App 時需要驗證身分；離開 App 超過您設定的時間（例如 10 秒）或一段時間沒有操作，會自動上鎖。</li>
         <li>標記為「隱藏」的內容預設遮蔽，需要您主動按下「顯示」才會出現。</li>
       </ul>
     </section>
 
     <section>
-      <h2>八、兒童隱私</h2>
-      <p>本 App 並非針對兒童設計，也不會收集任何人（包括兒童）的個人資料。</p>
+      <h2>十、兒童隱私</h2>
+      <p>本 App 並非針對兒童設計。開發者不會取得任何人（包括兒童）的個人資料；購買相關資料由 Google Play 處理（見第四節）。</p>
     </section>
 
     <section>
-      <h2>九、隱私權聲明的修改</h2>
-      <p>本聲明可能因 App 功能或法規變更而修改，修改後會更新本頁面。若日後新增任何會收集或傳送資料的功能，我們會先更新本聲明並在 App 中告知。</p>
+      <h2>十一、隱私權聲明的修改</h2>
+      <p>本聲明已於 1.1 版更新，說明購買與加密備份功能。日後若再新增會收集或傳送資料的功能，我們會先更新本聲明並在 App 中告知。</p>
     </section>
 
     <section>
-      <h2>十、聯絡我們</h2>
+      <h2>十二、聯絡我們</h2>
       <p>如對本隱私權聲明有任何疑問，請來信：<a href="mailto:donnolove@gmail.com">donnolove@gmail.com</a></p>
     </section>
   </article>
@@ -180,15 +211,17 @@
   <article id="en" lang="en">
     <h1>PasswordSafe Privacy Policy</h1>
     <p class="meta">App: PasswordSafe (密碼保, Android)<br>
-      Developer: chlapps</p>
+      Developer: chlapps<br>
+      Applies to: version 1.1 and later (last updated: November 2026)</p>
 
     <section class="summary">
       <h2>Summary</h2>
       <ul>
-        <li>PasswordSafe <strong>does not collect, upload, or share</strong> any of your personal data.</li>
-        <li>Everything you enter is <strong>stored only on your phone</strong>, and it is encrypted.</li>
-        <li>The app <strong>has no internet access</strong>, no ads, no analytics, and no accounts.</li>
-        <li>The developer <strong>cannot see, access, or recover</strong> your data.</li>
+        <li>PasswordSafe <strong>never sends your records to the developer or to any third party</strong>. Apart from encrypted backups you create yourself, everything you enter is stored only on your phone, and it is encrypted.</li>
+        <li>The app has no ads, no analytics, and no accounts.</li>
+        <li>The app connects to Google Play <strong>only for purchase features</strong> (showing the Pro price, buying Pro, and checking whether you own it). If you never use Pro or backup, the app does not connect at all.</li>
+        <li>The optional <strong>Pro encrypted backup</strong> is encrypted on your phone first, then saved to <strong>a place you choose</strong> (for example, your Google Drive or your phone's storage). The developer never receives your backup file.</li>
+        <li>The developer <strong>cannot see, access, or recover</strong> your data, and does not know your recovery password.</li>
       </ul>
     </section>
 
@@ -198,68 +231,97 @@
     </section>
 
     <section>
-      <h2>2. We do not collect personal data</h2>
-      <p>The app does not request internet permission and cannot connect to the internet, so it never sends any data to the developer or to any third party.</p>
+      <h2>2. We do not collect your records</h2>
+      <p>The app never sends your records, settings, or backups to the developer or to any third party.</p>
       <p>The app does not use advertising, analytics, crash reporting, or any third-party tracking services, and it does not require you to sign up or sign in.</p>
     </section>
 
     <section>
       <h2>3. Data stored on your phone</h2>
-      <p>To provide its features, the app stores the following data on your phone only. This data never leaves your device:</p>
+      <p>To provide its features, the app stores the following data on your phone:</p>
       <ul>
         <li>Records you enter: record names, notes, categories, and field contents such as usernames and passwords.</li>
         <li>App settings: display mode, auto-lock times, and category settings.</li>
         <li>If your phone has no screen lock and you use an "App PIN": only hashed and encrypted verification data is stored, never the PIN itself.</li>
         <li>To show your most-used records, the app keeps a view count and last-viewed time for each record.</li>
+        <li>If you use Pro backup: the backup name, the time of the last backup, the location of the backup file you chose, and protected backup key data.</li>
       </ul>
-      <p>The record database is fully encrypted, and its encryption key is protected by the Android Keystore.</p>
+      <p>The record database is fully encrypted, and its encryption key is protected by the Android Keystore. Apart from encrypted backups you create yourself (see section 5), this data never leaves your device.</p>
     </section>
 
     <section>
-      <h2>4. Permissions and system features</h2>
+      <h2>4. Buying Pro (Google Play)</h2>
+      <ul>
+        <li>Pro purchases are handled by Google Play. Payment details (such as your credit card) are collected and kept by Google; the developer never sees them.</li>
+        <li>The app asks Google Play whether this Google Play account owns Pro, only to turn on Pro features. Purchase information is not sent to the developer.</li>
+        <li>To provide purchases, the Google Play Billing Library may send its own operational logs to Google, which are handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        <li>For this reason the app has internet permission and Google Play billing permissions. These connections are used only for Google Play purchase features: showing the Pro price, buying Pro, checking whether you own it, and the billing library's own operational logs mentioned above (which may be sent later). The app has no other internet features.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Encrypted backup (optional Pro feature)</h2>
+      <ul>
+        <li>You create backup files yourself. You choose where to save them with the Android system file picker; the app gets access only to the file you choose, <strong>never reads your other files</strong>, does not use the Google Drive API, and does not ask for access to your Google account.</li>
+        <li>Your records are encrypted on your phone with your <strong>recovery password</strong> before they are written to the backup file. The developer does not have your recovery password and runs no cloud server of its own.</li>
+        <li>A backup file contains a small amount of <strong>unencrypted</strong> information used to identify the backup and handle different versions: the backup name, backup time, app version, Android version, and phone model, plus randomly generated identifiers and encryption parameters. Your records are not part of it.</li>
+        <li>If you save a backup to a service such as Google Drive, that service handles the upload and storage under its own privacy policy.</li>
+        <li>When the app updates your backup, it usually removes the previous backup file it recorded, after the new backup is confirmed. On Google Drive, the removed file first goes to Drive's trash (usually deleted automatically after about 30 days) and is still encrypted.</li>
+        <li>The app does not intentionally delete files you copied yourself. However, if you <strong>move</strong> the previous backup file to another folder, it may still be treated as the previous backup and removed.</li>
+        <li>In some cases (for example, if the storage location does not allow deletion, or a backup stops partway), an old backup file or an unfinished file may be left behind; you can delete it yourself where it was saved.</li>
+        <li>The app keeps access to the backup file it created until it creates the next backup or you clear all data.</li>
+        <li><strong>If you forget your recovery password and your original phone is no longer available, the backup cannot be restored</strong>, and the developer cannot help.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Permissions and system features</h2>
       <ul>
         <li><strong>Biometrics (fingerprint, face) and screen lock</strong>: used to unlock the app. Verification is performed by the Android system; the app only receives a success or failure result and <strong>never accesses or stores your fingerprint or face data</strong>.</li>
+        <li><strong>Internet and Google Play billing</strong>: used only for Google Play purchase features (see section 4).</li>
         <li><strong>Clipboard</strong>: PasswordSafe writes a field value to the system clipboard only when you explicitly use the Copy function.</li>
         <li><strong>Screenshots</strong>: to protect your data, the app blocks screenshots and hides its preview in the recent apps screen.</li>
       </ul>
     </section>
 
     <section>
-      <h2>5. Data sharing</h2>
+      <h2>7. Data sharing</h2>
       <p>The app does not provide, exchange, rent, or sell any data to any person, group, company, or government agency. The developer has no access to your data either.</p>
     </section>
 
     <section>
-      <h2>6. Data retention and deletion</h2>
+      <h2>8. Data retention and deletion</h2>
       <ul>
         <li>Your data stays on your phone until you delete it.</li>
         <li>You can delete individual records at any time, or delete everything at once under Settings (設定) → "Clear all data" (清除全部資料).</li>
-        <li>Uninstalling the app causes Android to delete all of the app's data.</li>
-        <li>The app disables Android auto backup and device-to-device transfer, so <strong>there is no cloud backup</strong>. If your phone is lost or damaged, or the app is uninstalled, your data may be unrecoverable, and the developer cannot help recover it.</li>
+        <li>Uninstalling the app causes Android to delete all of the app's data on your phone.</li>
+        <li>The app disables Android auto backup and device-to-device transfer. Only Pro encrypted backups that you create yourself are saved outside your phone.</li>
+        <li>"Clear all data" and uninstalling the app <strong>do not delete your backup files</strong>; you can delete them yourself where you saved them.</li>
       </ul>
     </section>
 
     <section>
-      <h2>7. Security</h2>
+      <h2>9. Security</h2>
       <ul>
         <li>The record database is fully encrypted, with its key protected by the Android Keystore.</li>
-        <li>You must verify your identity every time you open the app, and it locks automatically when you leave it or stop using it for a while.</li>
+        <li>Backup contents are encrypted with your recovery password before they leave your phone.</li>
+        <li>You verify your identity when you open the app, and it locks automatically after you leave it for longer than the time you set (for example, 10 seconds) or stop using it for a while.</li>
         <li>Content marked as hidden is masked by default and appears only when you tap "Show" (顯示).</li>
       </ul>
     </section>
 
     <section>
-      <h2>8. Children's privacy</h2>
-      <p>The app is not designed for children and does not collect personal data from anyone, including children.</p>
+      <h2>10. Children's privacy</h2>
+      <p>The app is not designed for children. The developer does not obtain personal data from anyone, including children; purchase-related data is handled by Google Play (see section 4).</p>
     </section>
 
     <section>
-      <h2>9. Changes to this policy</h2>
-      <p>This policy may change as the app or applicable laws change; any changes will be posted on this page. If we ever add a feature that collects or transmits data, we will update this policy first and let you know in the app.</p>
+      <h2>11. Changes to this policy</h2>
+      <p>This policy was updated for version 1.1 to describe purchases and encrypted backup. If we add any other feature that collects or transmits data, we will update this policy first and let you know in the app.</p>
     </section>
 
     <section>
-      <h2>10. Contact us</h2>
+      <h2>12. Contact us</h2>
       <p>If you have any questions about this privacy policy, please email <a href="mailto:donnolove@gmail.com">donnolove@gmail.com</a>.</p>
     </section>
   </article>
